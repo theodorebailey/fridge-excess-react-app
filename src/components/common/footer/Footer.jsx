@@ -9,11 +9,8 @@ function Footer () {
             {/* horizontal line break */}
             <hr className="footer-seperator"/>
             <section className="footer-social-media">
-                <a href="/" target="_blank">Linkedin</a>
-                <a href=""></a>
-                <a href="/" target="_blank">Youtube</a>
-                <a href=""></a>
-                <a href="/" target="_blank">Facebook</a>
+                {/* Link to own Linkedin page */}
+                <a href="https://www.linkedin.com/in/theodore-bailey-software-developer" target="_blank">Linkedin</a>
             </section>
             <section className="footer-info">
                 <div className="footer-info-left">
@@ -21,9 +18,9 @@ function Footer () {
                         Theodore Bailey
                     </div>
                     <div className="footer-info__returns">
-                        Returns Policy
+                        Company Policy
                         <br />
-                        Delivery
+                        Delivery Promise
                     </div>
                 </div>
                 <div className="footer-info-center">
@@ -33,7 +30,7 @@ function Footer () {
                     <div className="footer-info__terms">
                         Terms and Conditions
                         <br />
-                        Copyright
+                        Copyright©
                     </div>
                 </div>
                 <div className="footer-info-right">
@@ -41,9 +38,9 @@ function Footer () {
                         0123 4567 8910                      
                     </div>
                     <div className="footer-info__contact">
-                        Our Story
+                        Our Companies Story
                         <br />
-                        Contact Us
+                        Contact Details
                     </div>
                 </div>
             </section>

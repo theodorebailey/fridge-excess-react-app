@@ -90,3 +90,19 @@
     border-radius: 10px;
     color: white;
   }
+
+  .img {
+
+    width: 100%;
+    height: auto;
+
+    /* border-radius: 8px;
+    border: 1px solid black;
+    height: auto;
+    transform: rotate(90deg); */
+  }
+
+  #fridgeImage {
+    height: auto;
+    width: 20vh;
+}

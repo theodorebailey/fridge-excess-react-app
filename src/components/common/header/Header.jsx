@@ -2,6 +2,7 @@
 import React from 'react';
 // we can move location as long as items remain in common folder
 import { Navbar } from '../../common';
+import Image from './../images/pink_fridge.svg';
 
 import './Header.css';
 
@@ -14,7 +15,8 @@ function Header () {
             <div className="header-top">
                 {/* logo section */}
                 <div className="header-top__logo">
-                    <a href='/' className='header-logo'>LOGO</a>
+                    <a href='/' className='header-logo'>Fridge Excess</a>
+                    <img id='fridgeImage' src={Image} alt={"logo"} />
                 </div>
                 {/* navbar section */}
                 <div className='header-top__navbar'>
@@ -32,7 +34,7 @@ function Header () {
                 </section>
                 {/* email section */}
                 <section className='header-bottom__email'>
-                    fridgeExcess@gmail.com
+                    fridge_excess@gmail.com
                 </section>
             </section>
         </section>
