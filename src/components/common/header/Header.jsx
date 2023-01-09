@@ -2,6 +2,7 @@
 import React from 'react';
 // we can move location as long as items remain in common folder
 import { Navbar } from '../../common';
+
 import Image from './../images/pink_fridge.svg';
 
 import './Header.css';
