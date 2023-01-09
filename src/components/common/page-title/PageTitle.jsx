@@ -8,7 +8,7 @@ function PageTitle (props) {
 
     return(
         <section className='title'>
-            {title}            
+            {title}
         </section>
     )
 }

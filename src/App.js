@@ -1,13 +1,18 @@
 import React from 'react';
-import { BrowserRouter, Router, Routes, Route } from 'react-router-dom';
-import { Header, Footer, PageTitle } from './components/common'
+
+// import react router Dom Components
+import { Routes, Route } from 'react-router-dom';
+
+// Import all components
+import { Header, Footer, PageTitle, Login } from './components/common'
 
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <Header />  
+      <Header />
+      <Login /> 
         <Routes>
           <Route path='/contact' element= { <PageTitle title='contact'>Contact</PageTitle> } />
           <Route path='/portfolio' element= { <PageTitle title='portfolio'>Portfolio</PageTitle> } />

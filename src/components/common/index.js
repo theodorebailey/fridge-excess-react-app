@@ -9,11 +9,13 @@ import Header from './header';
 import Navbar from './navbar';
 import Footer from './footer';
 import PageTitle from './page-title';
+import Login from './login';
 
 // export multiples
 export {
     Header,
     Navbar,
     Footer,
-    PageTitle
+    PageTitle,
+    Login
 }
