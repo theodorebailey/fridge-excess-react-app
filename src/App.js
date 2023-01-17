@@ -1,7 +1,7 @@
 import React from 'react';
 
 // import react router Dom Components
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, useActionData } from 'react-router-dom';
 
 // Import all components
 import { Header, Footer, PageTitle, Login } from './components/common'

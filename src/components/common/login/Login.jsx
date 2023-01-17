@@ -1,12 +1,58 @@
 // import react
 import React from 'react';
 
+// import {useHistory} from 'react-router-dom';
+
+import { useState } from 'react';
+
 import './Login.css';
 
-function Login () {
+// function Welcome(props) {
+
+//   return 
+  
+// }
+
+
+// function checkLogInStatus () {
+
+//   let emailLogin = localStorage.getItem('emailLogin');
+
+//   let passwordLogin = localStorage.getItem('passwordLogin');
+
+//   if (emailLogin && passwordLogin) {
+
+
+
+//   }
+
+
+// }
+
+function Login (props) {
+
+  const [email, setEmail] = useState('');
+  const [password, setPass] = useState('');
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    console.log(email);
+
+    // localStorage.setItem('email', JSON.stringify(email));
+    // localStorage.setItem('password', JSON.stringify(pass));  
+
+  }
+
+
 
   return (
-      <>Login</>
+      <form onSubmit={handleSubmit}>
+        <label for="email">email</label>
+        <input value={email} type="email" placeholder="user@email.com" id="email" name="email"/>
+        <label for="password">password</label>
+        <input value={password} type="password" placeholder="********" id="password" name="password"/>
+        <button onClick={props.on} type="submit" id='loginButton'>Login</button>
+      </form>
   )
 
 }
