@@ -1,17 +1,18 @@
 import React, { useState } from 'react';
 
-export const LoggedIn = (props) => {
+export const Logout = (props) => {
 
   const [email, setEmail] = useState('');
   const [password, setPass] = useState('');
   const [name, setName] = useState('');
 
     const handleSubmit = (event) => {
+      // declare prevent dafault to refuse page reload
       event.preventDefault();
       console.log(email);
   
-      localStorage.setItem('email', JSON.stringify(email));
-      localStorage.setItem('password', JSON.stringify(password));  
+      // localStorage.setItem('email', JSON.stringify(email));
+      // localStorage.setItem('password', JSON.stringify(password));  
   
     }
 
@@ -20,13 +21,15 @@ export const LoggedIn = (props) => {
         <>
           <form onSubmit={handleSubmit}>
             <label>Full name</label>
-            <label for="email">email</label>
+            <label htmlFor="email">email</label>
             <input value={email} type="email" placeholder="user@email.com" id="email" name="email"/>
-            <label for="password">password</label>
+            <label htmlFor="password">password</label>
             <input value={password} type="password" placeholder="********" id="password" name="password"/>
-            <button onClick={props.on} type="submit" id='loginButton'>Log out</button>
+            <button onClick={() => props.onFormSwitch('login')} type="submit" id='logoutButton'>Logout</button>
           </form>
         </>
     )
 
 }
+
+export default Logout;
