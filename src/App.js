@@ -23,7 +23,7 @@ function App() {
       <Header />
       {/* <Login />  */}
       {
-        currentForm === "login" ? <Login onFormSwitch={toggleForm} /> : <Logout />
+        currentForm === "login" ? <Login onFormSwitch={toggleForm} /> : <Logout onFormSwitch={toggleForm} />
       } 
         <Routes>
           <Route path='/contact' element= { <PageTitle title='contact'>Contact</PageTitle> } />

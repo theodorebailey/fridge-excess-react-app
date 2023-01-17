@@ -1,4 +1,4 @@
-// import react
+// import react + store states user puts in
 import React,{ useState } from 'react';
 // import { useState } from 'react';
 
