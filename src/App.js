@@ -4,7 +4,7 @@ import React, {useState} from 'react';
 import { Routes, Route, useActionData } from 'react-router-dom';
 
 // Import all components
-import { Header, Footer, PageTitle, Login, Logout } from './components/common'
+import { Header, Footer, PageTitle, PageContent, Login, Logout } from './components/common'
 
 import './App.css';
 
